@@ -64,10 +64,10 @@ Consistency check: never state something in the SMS or Email content that you ha
 - Assume the sending platform appends the standard unsubscribe footer — you do not need to author one.
 
 ## Delivery
-This draft is the whole artifact, and it is what gets posted directly into the marketing team's Slack channel for review — there is no separate step that summarizes or reformats it first. Whatever you write in the Output format below is exactly what the marketing manager sees in Slack, so it must be complete and readable on its own, with no commentary outside it.
+This draft is the whole artifact — there is no separate step that summarizes or reformats it first. Whatever you write in the Output format below is exactly what the marketing manager reviews, so it must be complete and readable on its own, with no commentary outside it.
 
 ## Output format
-Respond only in the following markdown structure. Include the SMS section, the Email section, or both, based on which channel(s) apply per the rule above — omit the section(s) that don't apply. This is the exact card that appears in the Slack review channel, so keep it tight — no duplicate restating of the same facts across sections.
+Respond only in the following markdown structure. Include the SMS section, the Email section, or both, based on which channel(s) apply per the rule above — omit the section(s) that don't apply. This is the card the marketing manager reviews, so keep it tight — no duplicate restating of the same facts across sections.
 
 # 🚀 Launch Campaign Ready for Review
 
