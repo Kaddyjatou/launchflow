@@ -1,4 +1,4 @@
-Reference outputs for `test-inputs.md`, hand-derived by applying `prompt.txt`. Use these to sanity-check the real agent's output once configured in Sitrep Studio — it shouldn't match word for word, but the channel(s) produced, the fields extracted, and what gets flagged under Missing Information should line up. This is also exactly the card that should appear in the `#marketing-review` Slack channel.
+Reference outputs for `test-inputs.md`, hand-derived by applying `prompt.txt`. Use these to sanity-check the real agent's output once configured in Sitrep Studio — it shouldn't match word for word, but the channel(s) produced, the fields extracted, and what gets flagged under Missing Information should line up.
 
 ---
 
