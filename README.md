@@ -2,7 +2,7 @@
 
 **Turn product launch meetings into customer-ready marketing campaigns.**
 
-LaunchFlow is a Sitrep no-code agent. Sitrep hands it one launch-related task at a time — a product/service/feature name, plus a summary of the launch meeting it came from — and LaunchFlow returns a ready-to-review marketing campaign, built only from the details the team actually approved, posted directly to a dedicated Slack review channel.
+LaunchFlow is a Sitrep no-code agent. Sitrep hands it one launch-related task at a time — a product/service/feature name, plus a summary of the launch meeting it came from — and LaunchFlow returns a ready-to-review marketing campaign, built only from the details the team actually approved.
 
 Built for the [Sitrep AI Hackathon](https://joinsitrep.com/hackathon) — No-Code Track, **Managed** agent (built entirely in Sitrep Studio, no repo or server).
 
@@ -12,7 +12,7 @@ After product launch meetings, marketing teams manually read through the meeting
 
 ## Solution
 
-LaunchFlow analyzes the product launch meeting, extracts only the final approved launch information, and generates customer-ready marketing campaign drafts (SMS, email, or both) — then automatically posts them to a dedicated Slack review channel for approval.
+LaunchFlow analyzes the product launch meeting, extracts only the final approved launch information, and generates customer-ready marketing campaign drafts (SMS, email, or both) — ready for marketing review.
 
 ## What LaunchFlow does
 
@@ -21,7 +21,7 @@ LaunchFlow analyzes the product launch meeting, extracts only the final approved
 - Ignores ideas that were discussed but not approved.
 - Generates customer-facing campaign drafts (SMS, email, or both).
 - Flags missing information instead of guessing.
-- Returns a campaign ready for marketing review, posted to Slack.
+- Returns a campaign ready for marketing review.
 
 ## Workflow
 
@@ -38,7 +38,7 @@ Extracts approved launch details
         ↓
 Generates SMS and/or Email draft
         ↓
-Posts draft to #marketing-review on Slack
+Draft appears on the task, ready to review
         ↓
 Marketing Manager reviews
         ↓
@@ -49,9 +49,9 @@ Copy or send through the company's SMS/Email platform
 
 Note: LaunchFlow works from the meeting **summary** Sitrep hands it, not the raw transcript — it never sees more of the conversation than that summary contains.
 
-## Slack example
+## Example output
 
-Channel: `#marketing-review`
+This is what LaunchFlow produces, and what appears on the task's own Sitrep page once the agent runs:
 
 ```
 🚀 Launch Campaign Ready for Review
@@ -75,7 +75,7 @@ None
 Status: 🟡 Pending Marketing Approval
 ```
 
-This answers the question every judge (and every marketing manager) will have — *where does the output go?* Straight into the Slack channel the team already collaborates in, where they approve, edit, or copy it into their existing SMS/email platform.
+This answers the question every judge (and every marketing manager) will have — *where does the output go?* Straight onto the task itself, ready to review, edit, or copy into the company's existing SMS/email platform.
 
 **Input:** a product launch meeting. **Output:** a customer-ready launch campaign, waiting where marketing already works.
 
@@ -95,12 +95,11 @@ Set these up after signing in at [joinsitrep.com](https://joinsitrep.com) → bu
 - **Name:** LaunchFlow
 - **Tagline:** Turn product launch meetings into customer-ready marketing campaigns.
 - **Category:** Marketing
-- **Description:** Turns product launch meetings into ready-to-send SMS and email campaigns — built only from what the team actually approved, never a guess. Flags anything still unconfirmed instead of inventing it, and lands straight in your marketing team's Slack channel for approval.
+- **Description:** Analyzes a product launch meeting, extracts only the final approved launch details, and generates a customer-ready SMS/email campaign for marketing approval, without ever guessing at missing details.
 - **System prompt:** contents of [`prompt.txt`](prompt.txt), pasted verbatim
 - **Model:** the most capable model offered — extracting *only what was actually approved* from a meeting, across two channel formats, is a precision task, not a place to trade accuracy for a cheaper model
 - **Temperature:** low, ~0.2 — low enough that the same approved details produce the same campaign consistently, with just enough room for natural marketing phrasing
 - **Trigger:** route tasks coming from meetings tagged/categorized **"Product Launch"** (or "Go-to-Market") to this agent
-- **Delivery:** connect the Slack integration and set the output destination to `#marketing-review`, so each generated draft posts there directly instead of only appearing on the task board
 
 ## Validating before publishing
 
